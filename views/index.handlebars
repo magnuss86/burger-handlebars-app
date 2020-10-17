@@ -1,12 +1,12 @@
-<h1>Burgers fo all!</h1>
+<h1>Burgers for all!</h1>
 
 
 
-<div class="parent-burger-container">
-  <div class='w-50 burger-noteat-container flex'>
+<div class='inline w-100 justify-center align-center'>
+  <div class='w-50 flex justify-center align-center'>
     <h2>Burgers not eaten!</h2>
 
-    <ul class="burger-noteat-burger flex">
+    <ul class="">
       {{#each burgers}}
         {{#unless devoured}}
           {{> burgers/burger-block devour=true}}
@@ -15,9 +15,9 @@
     </ul>
   </div>
 
-  <div class='w-50 burger-eat-container flex'>
+  <div class='w-50 justify-center align-center flex'>
     <h2>Burgers have been devoured!</h2>
-    <ul class="burger-eat-burger flex">
+    <ul class="">
       {{#each burgers}}
         {{#if devoured}}
           {{> burgers/burger-block devour=false}}
@@ -31,7 +31,7 @@
 
 
 <h2>Add a Burger</h2>
-<form class="create-form inline w-100 h-auto">
+<form class="create-form add-burger">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
@@ -40,7 +40,7 @@
 
   <div class="form-group">
     <label for="devoured">devoured?</label><br>
-    <input type="radio" name="devoured" value="1" checked> devoured!<br>
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
     <input type="radio" name="devoured" value="0"> Not Devoured
   </div>
 

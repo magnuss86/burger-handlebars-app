@@ -45,17 +45,17 @@ li {
     height: auto;
   }
 
-  .burger-eat-burger, .burger-noteat-burger {
-    display: flex;
-    width: fit-content;
-    /* padding: 10px; */
+  .burger-eat, .burger-noteat {
+    display: inline-flex;
+    /* width: 50%; */
+    padding: 10px;
   }
 
-   .w-50 {
+  .w-50 {
     width: 50%;
   }
   
-  /* .justify-center {
+  .justify-center {
     justify-content: center;
   }
 
@@ -64,11 +64,39 @@ li {
   }
 
   .flex {
-    display: flex;
+    display: block;
   }
 
-  ul > li {
+  /* ul > li {
     height: 40%;
     width: 40%;
-    
+  
   } */
+  .display-block {
+    display: block;
+  }
+
+  .add-burger {
+    justify-content: right;
+  }
+
+  li {
+    background-color: orangered;
+    color: rgb(80, 59, 59);
+  }
+
+  h1 {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    /* display: inline-flex; */
+    /* float: right; */
+  }
+  h2 {
+    padding-left: 40px;
+    color: lightgreen;
+  }
+  
+  .bt-color {
+    background-color: orange;
+  }
