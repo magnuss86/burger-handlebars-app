@@ -1,27 +1,37 @@
 <h1>Burgers fo all!</h1>
 
-<h2>Burgers not eaten!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#unless devoured}}
-      {{> burgers/burger-block devour=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
 
-<h2>Burgers have been devoured!</h2>
+<div class="parent-burger-container">
+  <div class='w-50 burger-noteat-container flex'>
+    <h2>Burgers not eaten!</h2>
 
-<ul>
-  {{#each burgers}}
-    {{#if devoured}}
-      {{> burgers/burger-block devour=false}}
-    {{/if}}
-  {{/each}}
-</ul>
+    <ul class="burger-noteat-burger flex">
+      {{#each burgers}}
+        {{#unless devoured}}
+          {{> burgers/burger-block devour=true}}
+        {{/unless}}
+      {{/each}}
+    </ul>
+  </div>
+
+  <div class='w-50 burger-eat-container flex'>
+    <h2>Burgers have been devoured!</h2>
+    <ul class="burger-eat-burger flex">
+      {{#each burgers}}
+        {{#if devoured}}
+          {{> burgers/burger-block devour=false}}
+        {{/if}}
+      {{/each}}
+    </ul>
+  </div>
+
+</div>
+
+
 
 <h2>Add a Burger</h2>
-<form class="create-form">
+<form class="create-form inline w-100 h-auto">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
