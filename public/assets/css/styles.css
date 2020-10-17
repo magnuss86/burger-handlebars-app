@@ -77,7 +77,8 @@ li {
   }
 
   .add-burger {
-    justify-content: right;
+    display: inline-block; 
+
   }
 
   li {
@@ -99,4 +100,11 @@ li {
   
   .bt-color {
     background-color: orange;
+  }
+
+  .padding {
+    padding-left: 40px;
+  }
+  .padding-right {
+    padding-right: 130px;
   }
